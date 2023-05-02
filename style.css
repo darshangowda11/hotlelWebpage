@@ -1,29 +1,67 @@
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+  font-size: large;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: #eee;
+}
+
+li a img {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+
+.main-content {
+  background-image: url("/Simplotel_assignment//hotlelWebpage/Images/img1.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  height: 550px;
+  display: flex;
+}
+
+.loremipsum {
+    color: white;
+    background-color: rgba(212, 102, 90, 0.623);
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    letter-spacing: 2px;
+    padding-right: 70px;
+    align-self: center;
+    margin-bottom: 170px;
+    margin-left: 25px;
   }
   
-  li {
-    margin: 0 10px;
+  .loremipsum > h1 {
+    font-size:xx-large;
+    font-style: normal;
+    margin-top: 0;
   }
   
-  a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
-  a:hover {
-    background-color: #eee;
-  }
-  
-  li a img {
-    width: 20px;
-    height:20px;
-    margin-right: 5px;
+  .loremipsum > p {
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    font-size: large;
   }
   
