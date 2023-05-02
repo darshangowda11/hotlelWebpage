@@ -21,3 +21,9 @@ ul {
     background-color: #eee;
   }
   
+  li a img {
+    width: 20px;
+    height:20px;
+    margin-right: 5px;
+  }
+  
