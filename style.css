@@ -1,13 +1,12 @@
-
-body{
-  background-color: rgb(26, 3, 3);
+body {
+  background-color: rgba(12, 12, 12, 0.856);
 }
-header{
+header {
   background-color: white;
   margin: 0px 50px;
 }
 
-main{
+main {
   background-color: white;
   margin: 0px 50px;
 }
@@ -23,6 +22,11 @@ ul {
 li {
   margin: 0 10px;
   font-size: large;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  right: 50px;
 }
 
 a {
@@ -54,50 +58,126 @@ li a img {
 }
 
 .loremipsum {
-    color: white;
-    background-color: rgba(212, 102, 90, 0.623);
-    width: 40%;
-    height: auto;
-    padding: 30px;
-    letter-spacing: 2px;
-    padding-right: 70px;
-    align-self: center;
-    margin-bottom: 170px;
-    margin-left: 25px;
-  }
-  
-  .loremipsum > h1 {
-    font-size:xx-large;
-    font-style: normal;
-    margin-top: 0;
-  }
-  
-  .loremipsum > p {
-    margin-bottom: 0;
-    padding-bottom: 35px;
-    padding-right: 20px;
-    font-size: large;
-  }
-  
-  /* second page */
-  main{
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to right, #f97ad1, hsla(320, 97%, 75%, 0.932), #f8f66a);
-  }
-  section{
+  color: white;
+  background-color: rgba(212, 102, 90, 0.623);
+  width: 40%;
+  height: auto;
+  padding: 30px;
+  letter-spacing: 2px;
+  padding-right: 70px;
+  align-self: center;
+  margin-bottom: 170px;
+  margin-left: 25px;
+}
+
+.loremipsum > h1 {
+  font-size: xx-large;
+  font-style: normal;
+  margin-top: 0;
+}
+
+.loremipsum > p {
+  margin-bottom: 0;
+  padding-bottom: 35px;
+  padding-right: 20px;
+  font-size: large;
+}
+
+/* second page */
+.section {
+  background: linear-gradient(
+    to right,
+    #f165c5fd,
+    hsl(21.46deg 97% 71% / 97%),
+    #f9f34df3
+  );
+}
+h3 {
+  background-color: rgba(12, 12, 12, 0.856);
+  height: 20px;
+  width: calc(100%-50px);
+  margin-top: 100px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
   width: 100%;
   height: 100%;
-  }
+}
+.order-section {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+}
+section h2 {
+  margin: 50px 40%;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+}
+
+.item {
+  margin: 20px;
+  max-width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 0 60px 0 60px;
+}
+
+button {
+  background-color: hwb(0 88% 10% / 0.615);
+  display: block;
+  color: rgb(25, 2, 2);
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  /* padding: 10px 20px; */
+  margin: 50px auto;
+  /* margin-left: 900px; */
+  border-radius: 30px;
+  font-size: large;
+  border-style: none;
+}
+
+.item img {
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 0 80px 0 0px;
+}
+
+button:hover {
+  background-color: hsla(83, 82%, 74%, 0.689);
+}
+.item p {
+  width: 75%;
+  margin: 30px;
+}
+
+footer{
+  float:right;
+  background-color: rgba(155, 249, 104, 0.856);
+}
+
+
+/* for tablet */
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .order-section {
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(1, 100%);
     justify-items: center;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height:50%;
-
+    height: 50%;
   }
   section h2 {
     margin: 50px 40%;
@@ -105,46 +185,127 @@ li a img {
     font-weight: bold;
     font-size: 45px;
     color: white;
-
   }
-  
-  
-  .item  {
-    margin: 20px;
-    max-width: 100%;
-    height: auto;
-    background-color:whitesmoke;
-    border-radius:0 60px 0 60px
-  }
-  
-  
-   button {
-    background-color: hwb(0 88% 10% / 0.615);
-    /* display:block; */
-    color: rgb(25, 2, 2);
-    font-weight: bold;
-    width: 150px;
-    height: 50px;
-    /* padding: 10px 20px; */
-    margin: 50px;
-    margin-left: 900px;
-    border-radius: 30px;
-    font-size: large;
-    border-style: none;
-  }
-
-  .item img{
+  .item img {
     padding: 20px;
-    width: 250px;
+    width: 350px;
     height: 250px;
-    border-radius:0 80px 0 0px
+    border-radius: 0 80px 0 0px;
+  }
+  section h2 {
+    margin: 20px 200px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
   }
 
-    
-  button:hover {
-    background-color: hsla(83, 82%, 74%, 0.689);
+  ul {
+    list-style: none;
+    display: flex;
+    height: 50px;
+    margin: 5px;
   }
-   .item p {
-    width: 75%;
-    margin: 30px;
-   }
+  li {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  li a img {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+  }
+}
+
+/* for mobile */
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgba(12, 12, 12, 0.856);
+    display: flex;
+    flex-direction: column;
+  }
+  .order-section {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+  }
+  section h2 {
+    margin: 50px 40%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+  }
+  .main-content {
+    background-image: url("/Simplotel_assignment//hotlelWebpage/Images/img1.jpg");
+    background-size: contain;
+    height: auto;
+    padding: 20px;
+    display: flex;
+  }
+
+  .loremipsum {
+    color: white;
+    background-color: rgba(212, 102, 90, 0.623);
+    width: 50%;
+    height: 60%;
+    padding: 10px;
+    letter-spacing: 2px;
+    padding-right: 20px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .loremipsum > h1 {
+    font-size: small;
+    font-style: normal;
+    margin-top: 0;
+  }
+
+  .loremipsum > p {
+    margin-bottom: 0;
+    font-size: xx-small;
+  }
+
+  header {
+    position: relative;
+    top: 50px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    height: 250px;
+  }
+  li {
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  li a img {
+    width: 20px;
+    height: 10px;
+    margin: 4px;
+  }
+  .icon {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    flex-direction: column;
+  }
+  section h2 {
+    margin: 20px 120px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+}
